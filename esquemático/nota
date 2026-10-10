@@ -1,1 +1,7 @@
 Archivo esquemático del circuito en KiCad.
+Se hace uso del pin 25 (IO25) porque incluye un conversor digital a analógico por hardware de 8 bits.
+Una vez implementado el circuito, revisar la alimentación del TL084.
+Subir el código al ESP32 y comprobar la amplificación (Av=3) con distintos valores en la escala de pH.
+Verificar que el voltaje experimental de TP2 corresponda a la amplificación del voltaje del pin25 según la ecuación de Nernst.
+Ecuación de Nernst: Vin = Vbias − S·(pH − 7)
+Donde: S = 0.05916 V/pH y Vbias = 1.65 V
